@@ -76,7 +76,7 @@ function LandingPage() {
   };
 
   return (
-    <div className="relative min-h-screen font-sans selection:bg-[#A68846] selection:text-[#111111] overflow-x-hidden bg-transparent">
+    <div className="relative min-h-screen font-sans selection:bg-[#4CAF50] selection:text-[#111111] overflow-x-hidden bg-transparent">
       {/* Global Background Video */}
       <video
         autoPlay
@@ -111,9 +111,9 @@ function LandingPage() {
             {/* Music Toggle Button */}
             <button
               onClick={toggleMusic}
-              className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[60] w-12 h-12 sm:w-14 sm:h-14 bg-white/10 backdrop-blur-md border border-[#A68846]/30 rounded-full flex items-center justify-center text-[#A68846] hover:bg-[#A68846]/20 transition-all active:scale-90 shadow-lg group"
+              className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[60] w-12 h-12 sm:w-14 sm:h-14 bg-white/10 backdrop-blur-md border border-[#4CAF50]/30 rounded-full flex items-center justify-center text-[#4CAF50] hover:bg-[#4CAF50]/20 transition-all active:scale-90 shadow-lg group"
             >
-              <div className="absolute inset-0 rounded-full border border-[#A68846]/40 scale-110 group-hover:scale-125 transition-transform" />
+              <div className="absolute inset-0 rounded-full border border-[#4CAF50]/40 scale-110 group-hover:scale-125 transition-transform" />
               {isMusicPlaying ? <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" /> : <VolumeX className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
 

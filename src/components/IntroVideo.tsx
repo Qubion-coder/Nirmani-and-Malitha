@@ -41,7 +41,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 pointer-events-none opacity-20" style={{ background: "radial-gradient(circle at center, #A68846 0%, transparent 70%)" }} />
+            <div className="absolute inset-0 pointer-events-none opacity-20" style={{ background: "radial-gradient(circle at center, #4CAF50 0%, transparent 70%)" }} />
             <div className="relative z-10 text-center flex flex-col items-center">
               <h1 className="flex flex-col items-center gap-2 sm:gap-3 mb-10 sm:mb-14">
                 <span className="text-sm sm:text-base md:text-lg tracking-[0.3em] sm:tracking-[0.4em] uppercase text-[#111111] mb-4 sm:mb-6 font-semibold">

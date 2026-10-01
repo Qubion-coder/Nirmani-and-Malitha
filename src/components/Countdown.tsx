@@ -46,7 +46,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         </div>
 
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl mb-3" style={{ color: "#B8942A", textShadow: "rgba(184,148,42, 0.3) 0px 0px 56px" }}>
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl mb-3" style={{ color: "#F06292", textShadow: "rgba(240,98,146, 0.3) 0px 0px 56px" }}>
             Until We Say I Do
           </h2>
 
@@ -103,11 +103,11 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
                   <React.Fragment key={item.label}>
                     <div className="flex items-center gap-8 sm:gap-12 md:gap-14">
                       <div className="flex flex-col items-center gap-2">
-                        <span className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none" style={{ color: "#B8942A", fontVariantNumeric: "tabular-nums", textShadow: "rgba(184,148,42, 0.28) 0px 0px 40px" }}>
+                        <span className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none" style={{ color: "#F06292", fontVariantNumeric: "tabular-nums", textShadow: "rgba(240,98,146, 0.28) 0px 0px 40px" }}>
                           {String(item.value).padStart(2, '0')}
                         </span>
                         <div className="w-full h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(160,160,160, 0.733), transparent)" }} />
-                        <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.38em] font-sans" style={{ color: "rgba(184,148,42, 0.8)" }}>
+                        <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.38em] font-sans" style={{ color: "rgba(240,98,146, 0.8)" }}>
                           {item.label}
                         </span>
                       </div>
