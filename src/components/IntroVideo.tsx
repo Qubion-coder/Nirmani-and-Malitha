@@ -47,17 +47,17 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                 <span className="text-sm sm:text-base md:text-lg tracking-[0.3em] sm:tracking-[0.4em] uppercase text-[#111111] mb-4 sm:mb-6 font-semibold">
                   The Wedding Invitation
                 </span>
-                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#111111] uppercase drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)]">
+                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_25px_rgba(255,255,255,0.8)]">
                   NIRMANI
                 </span>
                 <div className="flex items-center gap-3 opacity-90">
-                  <div className="h-[1px] w-8 sm:w-16 bg-[#111111]/60"></div>
-                  <span className="text-3xl sm:text-4xl font-display italic text-[#111111] lowercase tracking-widest px-2 drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)]">
+                  <div className="h-[1px] w-8 sm:w-16 bg-white shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
+                  <span className="text-3xl sm:text-4xl font-display italic text-white lowercase tracking-widest px-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_15px_rgba(255,255,255,0.8)]">
                     and
                   </span>
-                  <div className="h-[1px] w-8 sm:w-16 bg-[#111111]/60"></div>
+                  <div className="h-[1px] w-8 sm:w-16 bg-white shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
                 </div>
-                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#111111] uppercase drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)]">
+                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_25px_rgba(255,255,255,0.8)]">
                   MALITHA
                 </span>
               </h1>

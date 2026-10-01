@@ -41,7 +41,7 @@ export const CoupleDetails: React.FC = () => {
             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. T. Bagya Senarathne</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
-            <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
+            <Heart className="w-6 h-6 text-black/80 fill-black/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
           </div>
         </motion.div>
 
@@ -91,7 +91,7 @@ export const CoupleDetails: React.FC = () => {
             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. P.M Ashoka Wimalasiri</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
-            <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
+            <Heart className="w-6 h-6 text-black/80 fill-black/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
           </div>
         </motion.div>
       </div>

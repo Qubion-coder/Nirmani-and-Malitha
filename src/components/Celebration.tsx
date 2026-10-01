@@ -14,7 +14,7 @@ export const Celebration: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl" style={{ color: "#F06292", textShadow: "0 0 40px rgba(192,192,192,0.22)" }}>
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl" style={{ color: "#111111", textShadow: "0 0 40px rgba(192,192,192,0.22)" }}>
             The Celebration
           </h2>
           <div className="flex items-center justify-center mt-4" aria-hidden="true">
@@ -39,7 +39,7 @@ export const Celebration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="space-y-4 text-sm sm:text-base font-bold leading-relaxed font-sans uppercase tracking-wider flex flex-col items-center" style={{ color: "#2E7D32", textShadow: "0 0 20px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.9)" }}>
+            <div className="space-y-4 text-sm sm:text-base font-bold leading-relaxed font-sans uppercase tracking-wider flex flex-col items-center" style={{ color: "#111111", textShadow: "0 0 20px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.9)" }}>
               <p>Friday, 30th of October 2026</p>
               <p>8.15 am to 3.45 pm</p>
               <p>Hotel Rose Garden, Ragama Road, Kadawatha</p>
@@ -48,7 +48,7 @@ export const Celebration: React.FC = () => {
                 href="https://maps.app.goo.gl/NcYGVX732tHxcVNNA" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-block mt-6 px-8 py-3 border border-[#F06292]/50 bg-white/95 text-[#2E7D32] rounded-full text-xs font-extrabold hover:bg-white hover:scale-105 transition-all shadow-[0_4px_15px_rgba(0,0,0,0.1)] uppercase tracking-[0.2em]"
+                className="inline-block mt-6 px-8 py-3 border border-[#111111]/50 bg-white/95 text-[#111111] rounded-full text-xs font-extrabold hover:bg-white hover:scale-105 transition-all shadow-[0_4px_15px_rgba(0,0,0,0.1)] uppercase tracking-[0.2em]"
                 style={{ textShadow: "none" }}
               >
                 View map

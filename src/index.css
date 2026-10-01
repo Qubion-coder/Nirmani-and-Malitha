@@ -9,24 +9,33 @@
   --color-brand-gold: #555555;
   --color-brand-gold-light: #AAAAAA;
   --color-brand-gold-deep: #222222;
-  
-  --color-brand-primary: #4CAF50; /* Green */
-  --color-brand-primary-light: #A5D6A7; /* Light Green */
-  --color-brand-primary-deep: #2E7D32; /* Dark Green */
-  --color-brand-primary-muted: #81C784; /* Muted Green */
-  
-  --color-brand-champagne: #FFFFFF; /* White */
-  --color-brand-ivory: #F8F8F8; /* Off White */
-  --color-brand-pink: #F06292; /* Pink */
-  --color-brand-white: #FFFFFF; /* White */
-  --color-brand-accent: #F48FB1; /* Light Pink */
-  --color-brand-dark: #1B5E20; /* Very Dark Green */
+
+  --color-brand-primary: #000000;
+  /* Steel Blue */
+  --color-brand-primary-light: #999999;
+  /* Light Steel Blue */
+  --color-brand-primary-deep: #000000;
+  /* Dark Steel Blue / Midnight Blue */
+  --color-brand-primary-muted: #666666;
+  /* Cadet Blue (Muted Steel) */
+
+  --color-brand-champagne: #F5F5F5;
+  /* Light Blue-Ivory */
+  --color-brand-ivory: #111111;
+  /* Soft Blue-Ivory */
+  --color-brand-pink: #000000;
+  /* Accent Red */
+  --color-brand-white: #111111;
+  --color-brand-accent: #333333;
+  /* Steel Blue Accent */
+  --color-brand-dark: #000000;
+  /* Navy Blue */
 
   /* Church Theme */
   --color-church-primary: #8F9779;
   --color-church-light: #C0C8AD;
   --color-church-bg: #F4F6F0;
-  
+
   /* Poruwa Theme */
   --color-poruwa-primary: #A0A0A0;
   --color-poruwa-light: #F3E5AB;
@@ -46,8 +55,8 @@
 
 @layer base {
   body {
-  @apply bg-[#FCFAF8] text-gray-800 antialiased;
-}
+    @apply bg-[#FCFAF8] text-gray-800 antialiased;
+  }
 
 
 
@@ -84,8 +93,8 @@
   box-shadow:
     0 8px 25px rgba(0, 0, 0, 0.4),
     inset -3px -3px 8px rgba(0, 0, 0, 0.3),
-    inset 3px 3px 8px rgba(0,0,0, 0.6);
-  border: 1px solid rgba(0,0,0, 0.4);
+    inset 3px 3px 8px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .sakura-petal {

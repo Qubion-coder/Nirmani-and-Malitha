@@ -91,7 +91,7 @@ With love,
           <button 
             onClick={handleGenerate}
             disabled={!name.trim()}
-            className="w-full py-3 bg-gradient-to-r from-[#4CAF50] to-[#2E7D32] text-white font-extrabold uppercase tracking-[0.2em] text-sm rounded-lg hover:opacity-90 disabled:opacity-50 transition-opacity mt-4 shadow-[0_0_15px_rgba(76,175,80,0.3)]"
+            className="w-full py-3 bg-gradient-to-r from-[#4CAF50] to-[#111111] text-white font-extrabold uppercase tracking-[0.2em] text-sm rounded-lg hover:opacity-90 disabled:opacity-50 transition-opacity mt-4 shadow-[0_0_15px_rgba(76,175,80,0.3)]"
           >
             Generate Link
           </button>
@@ -110,7 +110,7 @@ With love,
 
                 <button 
                   onClick={handleCopyMessage}
-                  className="w-full py-2 bg-[#4CAF50] text-white font-bold uppercase tracking-wider text-xs rounded-lg hover:bg-[#2E7D32] transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-2 bg-[#4CAF50] text-white font-bold uppercase tracking-wider text-xs rounded-lg hover:bg-[#111111] transition-colors flex items-center justify-center gap-2"
                 >
                   {copyMessageCopied ? '✓ Copied Message!' : 'Copy Full Message'}
                 </button>

@@ -23,7 +23,7 @@ export const NoteFromUs: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-serif text-3xl sm:text-4xl mb-3" style={{ color: "#F06292" }}>A Note From Us</p>
+          <p className="font-serif text-3xl sm:text-4xl mb-3" style={{ color: "#111111" }}>A Note From Us</p>
           <div className="flex items-center justify-center gap-3" aria-hidden="true">
             <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, #A0A0A0cc)" }} />
             <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
@@ -42,10 +42,10 @@ export const NoteFromUs: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="leading-none select-none mb-2" aria-hidden="true">
-              <span className="font-display font-bold" style={{ fontSize: "clamp(4rem, 14vw, 7rem)", color: "#F06292", opacity: 0.7, lineHeight: 1 }}>“</span>
+              <span className="font-display font-bold" style={{ fontSize: "clamp(4rem, 14vw, 7rem)", color: "#111111", opacity: 0.7, lineHeight: 1 }}>“</span>
             </div>
             <p className="font-display font-bold italic leading-[1.4] px-2 text-center" style={{ fontSize: "clamp(1.2rem, 3.5vw, 1.8rem)", color: "rgba(27,94,32, 0.9)", marginTop: "-1rem" }}>
-              <span className="block mt-4 mb-4 text-[#F06292] uppercase tracking-wider font-sans text-sm md:text-base">
+              <span className="block mt-4 mb-4 text-[#111111] uppercase tracking-wider font-sans text-sm md:text-base">
                 Mr. P.M Ashoka Wimalasiri<br/>
                 together with<br/>
                 Mr. T. Bagya Senarathne
@@ -53,10 +53,10 @@ export const NoteFromUs: React.FC = () => {
               <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 mb-6">
                 Request the honour of the presence of to celebrate the wedding of their children
               </span>
-              <span className="font-serif text-3xl md:text-5xl text-[#F06292] block my-6">
+              <span className="font-serif text-3xl md:text-5xl text-[#111111] block my-6">
                 Nirmani &amp; Malitha
               </span>
-              <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 text-[#F06292]">
+              <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 text-[#111111]">
                 Join us as we celebrate love, laughter and the beginning of a beautiful journey together
               </span>
             </p>
@@ -68,7 +68,7 @@ export const NoteFromUs: React.FC = () => {
                 </svg>
                 <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(270deg, transparent, #A0A0A0cc)" }} />
               </div>
-              <p className="font-serif text-2xl sm:text-3xl" style={{ color: "#F06292" }}>
+              <p className="font-serif text-2xl sm:text-3xl" style={{ color: "#111111" }}>
                 Nirmani &amp; Malitha
               </p>
             </div>

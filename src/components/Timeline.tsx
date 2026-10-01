@@ -18,7 +18,7 @@ export const Timeline: React.FC = () => {
 
       <div className="w-full max-w-3xl relative z-10 bg-white/50 backdrop-blur-md rounded-[3rem] border border-[#4CAF50]/20 shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-6 sm:p-12 my-10">
         <div className="text-center mb-10">
-          <h2 className="text-5xl sm:text-6xl font-display text-[#2E7D32] tracking-tight drop-shadow-sm" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.9)" }}>Timeline</h2>
+          <h2 className="text-5xl sm:text-6xl font-display text-[#111111] tracking-tight drop-shadow-sm" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.9)" }}>Timeline</h2>
           <div className="flex items-center justify-center mt-4 opacity-70" aria-hidden="true">
             <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#4CAF50]" />
             <svg width="9" height="9" viewBox="0 0 9 9" fill="none" className="mx-4">
@@ -46,7 +46,7 @@ export const Timeline: React.FC = () => {
               >
                 {/* Time */}
                 <div className={`flex-1 w-full text-center ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'} pt-1 md:pt-0`}>
-                  <span className="text-3xl sm:text-4xl font-serif text-[#2E7D32] font-medium" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.time}</span>
+                  <span className="text-3xl sm:text-4xl font-serif text-[#111111] font-medium" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.time}</span>
                 </div>
 
                 {/* Icon Node */}

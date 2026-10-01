@@ -42,23 +42,23 @@ export const HeroContent: React.FC = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="mb-8 flex flex-col items-center"
             >
-              <span className="text-[#2E7D32] uppercase tracking-widest text-xs sm:text-sm font-extrabold mb-3 bg-white/60 px-4 py-1 rounded-full backdrop-blur-sm border border-white/50 shadow-sm">We cordially invite</span>
-              <span className="text-xl sm:text-3xl md:text-4xl font-serif text-[#2E7D32] text-center px-4 leading-tight" style={{ textShadow: "0 0 20px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.9)" }}>
+              <span className="text-[#111111] uppercase tracking-widest text-xs sm:text-sm font-extrabold mb-3 bg-white/60 px-4 py-1 rounded-full backdrop-blur-sm border border-white/50 shadow-sm">We cordially invite</span>
+              <span className="text-xl sm:text-3xl md:text-4xl font-serif text-[#111111] text-center px-4 leading-tight" style={{ textShadow: "0 0 20px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.9)" }}>
                 {prefix} {name}
               </span>
             </motion.div>
           )}
-          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#4CAF50] uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_25px_rgba(255,255,255,0.8)]">
             NIRMANI
           </span>
           <div className="flex items-center gap-3 opacity-90">
-            <div className="h-[1px] w-8 sm:w-16 bg-[#4CAF50]"></div>
-            <span className="text-2xl sm:text-4xl font-display italic text-[#4CAF50] lowercase tracking-widest px-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+            <div className="h-[1px] w-8 sm:w-16 bg-white shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
+            <span className="text-2xl sm:text-4xl font-display italic text-white lowercase tracking-widest px-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_15px_rgba(255,255,255,0.8)]">
               and
             </span>
-            <div className="h-[1px] w-8 sm:w-16 bg-[#4CAF50]"></div>
+            <div className="h-[1px] w-8 sm:w-16 bg-white shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
           </div>
-          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#4CAF50] uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_25px_rgba(255,255,255,0.8)]">
             MALITHA
           </span>
         </h1>
@@ -70,10 +70,10 @@ export const HeroContent: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1, repeat: Infinity, repeatType: "reverse" }}
       >
-        <div className="w-px h-7" style={{ background: "linear-gradient(180deg, transparent, rgba(240,98,146,0.5))" }} />
+        <div className="w-px h-7" style={{ background: "linear-gradient(180deg, transparent, rgba(17,17,17,0.5))" }} />
         <div>
           <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
-            <path d="M1 1L7 7L13 1" stroke="#F06292" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.75" />
+            <path d="M1 1L7 7L13 1" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.75" />
           </svg>
         </div>
       </motion.div>
