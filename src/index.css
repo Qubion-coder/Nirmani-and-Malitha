@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Great Vibes", cursive;
+
+  --color-brand-gold: #555555;
+  --color-brand-gold-light: #AAAAAA;
+  --color-brand-gold-deep: #222222;
+  
+  --color-brand-primary: #4CAF50; /* Green */
+  --color-brand-primary-light: #A5D6A7; /* Light Green */
+  --color-brand-primary-deep: #2E7D32; /* Dark Green */
+  --color-brand-primary-muted: #81C784; /* Muted Green */
+  
+  --color-brand-champagne: #FFFFFF; /* White */
+  --color-brand-ivory: #F8F8F8; /* Off White */
+  --color-brand-pink: #F06292; /* Pink */
+  --color-brand-white: #FFFFFF; /* White */
+  --color-brand-accent: #F48FB1; /* Light Pink */
+  --color-brand-dark: #1B5E20; /* Very Dark Green */
+
+  /* Church Theme */
+  --color-church-primary: #8F9779;
+  --color-church-light: #C0C8AD;
+  --color-church-bg: #F4F6F0;
+  
+  /* Poruwa Theme */
+  --color-poruwa-primary: #A0A0A0;
+  --color-poruwa-light: #F3E5AB;
+  --color-poruwa-bg: #FDFBF7;
+
+  /* Homecoming Theme */
+  --color-homecoming-primary: #800020;
+  --color-homecoming-light: #A34A58;
+  --color-homecoming-bg: #FAF5F6;
+
+  /* Oldmoney Theme for Story */
+  --color-oldmoney-cream: #111111;
+  --color-oldmoney-brown: #000000;
+  --color-oldmoney-olive: #000000;
+  --color-oldmoney-taupe: #666666;
+}
+
+@layer base {
+  body {
+  @apply bg-[#FCFAF8] text-gray-800 antialiased;
+}
+
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold-deep via-brand-gold to-brand-gold-deep;
+  }
+
+  .border-gold {
+    @apply border border-brand-gold/30;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+.wax-seal {
+  background: radial-gradient(circle at 30% 30%, #333333, #111111, #000000);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.4),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.3),
+    inset 3px 3px 8px rgba(0,0,0, 0.6);
+  border: 1px solid rgba(0,0,0, 0.4);
+}
+
+.sakura-petal {
+  pointer-events: none;
+  position: fixed;
+  z-index: 50;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-primary-muted);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-primary);
+}
