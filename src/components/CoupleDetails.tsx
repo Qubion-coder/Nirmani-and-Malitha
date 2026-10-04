@@ -21,7 +21,7 @@ export const CoupleDetails: React.FC = () => {
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-primary/60" />
           </div>
           <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm">
-            Nirmani <span className="italic text-brand-primary font-bold mx-2">&</span> Malitha
+            Nirmani <span className="italic text-brand-primary font-bold mx-2">&</span> Pramodya
           </h2>
         </motion.div>
       </div>
@@ -37,7 +37,7 @@ export const CoupleDetails: React.FC = () => {
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Malitha</h3>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Pramodya</h3>
             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. T. Bagya Senarathne</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
@@ -58,7 +58,7 @@ export const CoupleDetails: React.FC = () => {
 
           <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[500px] lg:w-[420px] lg:h-[580px] rounded-[12rem_12rem_16px_16px] overflow-hidden border-[6px] border-white/90 shadow-[0_20px_50px_rgba(70,130,180,0.2)] bg-brand-champagne mx-auto z-10 transition-transform duration-700 group-hover:-translate-y-2 flex flex-col items-center justify-center gap-4">
             <img 
-              src="/pre/gallery-3.jpg" 
+              src="/12345.jpg" 
               alt="Couple" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

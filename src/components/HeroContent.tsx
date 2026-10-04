@@ -59,21 +59,21 @@ export const HeroContent: React.FC = () => {
             <div className="h-[1px] w-8 sm:w-16 bg-white shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
           </div>
           <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:0_0_25px_rgba(255,255,255,0.8)]">
-            MALITHA
+            PRAMODYA
           </span>
         </h1>
       </motion.div>
       <motion.div 
-        className="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5" 
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3" 
         aria-hidden="true"
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1, repeat: Infinity, repeatType: "reverse" }}
       >
-        <div className="w-px h-7" style={{ background: "linear-gradient(180deg, transparent, rgba(17,17,17,0.5))" }} />
+        <div className="w-[2px] h-12" style={{ background: "linear-gradient(180deg, transparent, rgba(17,17,17,1))" }} />
         <div>
-          <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
-            <path d="M1 1L7 7L13 1" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.75" />
+          <svg width="28" height="16" viewBox="0 0 14 8" fill="none" style={{ filter: "drop-shadow(0px 2px 4px rgba(255,255,255,0.9))" }}>
+            <path d="M1 1L7 7L13 1" stroke="#111111" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="1" />
           </svg>
         </div>
       </motion.div>

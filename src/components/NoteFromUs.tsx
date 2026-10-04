@@ -54,7 +54,7 @@ export const NoteFromUs: React.FC = () => {
                 Request the honour of the presence of to celebrate the wedding of their children
               </span>
               <span className="font-serif text-3xl md:text-5xl text-[#111111] block my-6">
-                Nirmani &amp; Malitha
+                Nirmani &amp; Pramodya
               </span>
               <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 text-[#111111]">
                 Join us as we celebrate love, laughter and the beginning of a beautiful journey together
@@ -69,7 +69,7 @@ export const NoteFromUs: React.FC = () => {
                 <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(270deg, transparent, #A0A0A0cc)" }} />
               </div>
               <p className="font-serif text-2xl sm:text-3xl" style={{ color: "#111111" }}>
-                Nirmani &amp; Malitha
+                Nirmani &amp; Pramodya
               </p>
             </div>
           </motion.div>

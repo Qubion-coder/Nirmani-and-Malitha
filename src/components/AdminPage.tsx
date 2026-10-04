@@ -49,7 +49,7 @@ ${generatedLink}
 Your presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.
 
 With love,
-❤️ Malitha & Nirmani`;
+❤️ Pramodya & Nirmani`;
 
     try {
       await navigator.clipboard.writeText(message);

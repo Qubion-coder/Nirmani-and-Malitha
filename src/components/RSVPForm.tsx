@@ -81,7 +81,7 @@ export const RSVPForm: React.FC = () => {
             <div className="h-px w-16 mx-auto bg-[#111111] shadow-[0_0_10px_rgba(255,255,255,1)]" />
           </div>
           <p className="font-sans text-sm font-bold leading-relaxed mb-10 sm:mb-12 mx-auto max-w-md text-[#111111] uppercase tracking-widest" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>
-            KINDLY RSVP (REGRETS ONLY) BY 15TH OF OCTOBER 2026
+            KINDLY RSVP (REGRETS ONLY) BY 18TH OF OCTOBER 2026
           </p>
           <div>
             {submitted ? (

@@ -44,9 +44,9 @@ export const Timeline: React.FC = () => {
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
-                {/* Time */}
+                {/* Time (Now Title) */}
                 <div className={`flex-1 w-full text-center ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'} pt-1 md:pt-0`}>
-                  <span className="text-3xl sm:text-4xl font-serif text-[#111111] font-medium" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.time}</span>
+                  <h4 className="text-xl sm:text-2xl font-serif text-[#1B5E20] font-semibold leading-tight" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.title}</h4>
                 </div>
 
                 {/* Icon Node */}
@@ -54,9 +54,9 @@ export const Timeline: React.FC = () => {
                   <event.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#4CAF50]" />
                 </div>
 
-                {/* Content */}
+                {/* Content (Now Time) */}
                 <div className={`flex-1 w-full text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'} pb-2 md:pb-0`}>
-                  <h4 className="text-xl sm:text-2xl font-serif text-[#1B5E20] font-semibold leading-tight" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.title}</h4>
+                  <span className="text-3xl sm:text-4xl font-serif text-[#111111] font-medium" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.time}</span>
                 </div>
               </motion.div>
             ))}
