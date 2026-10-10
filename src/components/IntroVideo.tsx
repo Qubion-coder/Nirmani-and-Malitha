@@ -20,7 +20,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-[200] bg-white flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
-        src="/background.mp4"
+        src="/gemini_generated_video_163f7d38.mp4"
         className={`w-full h-full object-cover transition-opacity duration-1000 ${hasStarted ? 'opacity-100' : 'opacity-0'}`}
         playsInline
         onEnded={onComplete}

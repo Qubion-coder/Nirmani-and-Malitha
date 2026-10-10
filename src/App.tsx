@@ -7,8 +7,8 @@ import { Countdown } from './components/Countdown';
 import { Celebration } from './components/Celebration';
 import { NoteFromUs } from './components/NoteFromUs';
 import { Timeline } from './components/Timeline';
-// Removed Gallery import
-
+import { Gallery } from './components/Gallery';
+import { CoupleDetails } from './components/CoupleDetails';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
@@ -120,6 +120,8 @@ function LandingPage() {
 
 
             <HeroContent />
+            
+            <CoupleDetails />
 
             <Timeline />
 
@@ -127,11 +129,9 @@ function LandingPage() {
 
             <Celebration />
 
+            <Gallery />
+
             <NoteFromUs />
-
-
-
-
 
             <RSVPForm />
 

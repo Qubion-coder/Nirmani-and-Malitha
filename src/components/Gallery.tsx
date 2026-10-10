@@ -4,40 +4,17 @@ import { motion } from 'motion/react';
 const galleryImages = [
   {
     id: 1,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/DSC01583.jpg",
+    src: "/1234.jpg",
     aspectRatio: "3/4",
-    rotate: "0deg"
+    rotate: "0.2deg"
   },
   {
     id: 2,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/DSC01639.jpg",
+    src: "/12345.jpg",
     aspectRatio: "4/3",
-    rotate: "0.4deg"
+    rotate: "-0.2deg"
   },
-  {
-    id: 3,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/RWP01348.jpg",
-    aspectRatio: "1/1",
-    rotate: "-0.35deg"
-  },
-  {
-    id: 4,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/RWP01402.jpg",
-    aspectRatio: "2/3",
-    rotate: "0deg"
-  },
-  {
-    id: 5,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/RWP00032.jpg",
-    aspectRatio: "5/4",
-    rotate: "0.4deg"
-  },
-  {
-    id: 6,
-    src: "/2026.07.16-20260612T100209Z-3-001/my/RWP00101.jpg",
-    aspectRatio: "3/2",
-    rotate: "-0.35deg"
-  }
+
 ];
 
 export const Gallery: React.FC = () => {
@@ -45,9 +22,9 @@ export const Gallery: React.FC = () => {
     <section id="gallery" aria-label="Our Gallery" className="relative overflow-hidden py-24 sm:py-32 px-4 sm:px-6 bg-[#FFFFFF] text-[#111111]">
       <div className="pointer-events-none absolute inset-0 opacity-100" style={{ background: "radial-gradient(ellipse 75% 58% at 18% 28%, rgba(192,192,192,0.16) 0%, transparent 52%), radial-gradient(ellipse 50% 48% at 90% 72%, rgba(160,160,160,0.1) 0%, transparent 50%)" }} />
       <div className="pointer-events-none absolute -left-1/4 top-0 h-[min(60vw,480px)] w-[min(60vw,480px)] rounded-full blur-3xl opacity-30 bg-[#A0A0A0]" />
-      
+
       <div className="relative mx-auto max-w-6xl">
-        <motion.div 
+        <motion.div
           className="mb-14 sm:mb-16 text-center sm:text-left"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,9 +51,9 @@ export const Gallery: React.FC = () => {
 
         <div className="columns-1 gap-4 sm:columns-2 sm:gap-5 lg:columns-3 lg:gap-6">
           {galleryImages.map((img, index) => (
-            <motion.button 
+            <motion.button
               key={img.id}
-              type="button" 
+              type="button"
               aria-label={`Open photo ${img.id} in full screen`}
               className="group mb-4 w-full break-inside-avoid text-left sm:mb-5 lg:mb-6 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black/80"
               style={{ rotate: img.rotate }}
@@ -85,14 +62,14 @@ export const Gallery: React.FC = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <span 
-                className="relative block overflow-hidden rounded-2xl shadow-2xl ring-1 transition duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.55)] sm:rounded-[1.35rem]" 
+              <span
+                className="relative block overflow-hidden rounded-2xl shadow-2xl ring-1 transition duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.55)] sm:rounded-[1.35rem]"
                 style={{ backgroundColor: "rgba(17,17,17,0.045)", boxShadow: "0 4px 24px -4px rgba(0,0,0,0.4), inset 0 1px 0 rgba(160,160,160,0.48)" }}
               >
                 <span className="relative block w-full overflow-hidden" style={{ aspectRatio: img.aspectRatio }}>
                   <img src={img.src} alt="" className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]" loading="lazy" />
                   <span className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-60 transition duration-500 group-hover:opacity-90" aria-hidden="true" />
-                  
+
                   <span className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2 sm:bottom-4 sm:left-4 sm:right-4">
                     <span className="text-[10px] font-extrabold uppercase tracking-[0.35em] font-sans" style={{ color: "rgba(250,246,236,0.52)" }}>
                       View
