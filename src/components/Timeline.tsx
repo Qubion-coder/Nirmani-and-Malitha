@@ -1,0 +1,71 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { Heart, Music, Utensils, PartyPopper, Camera, Car, Pen } from 'lucide-react';
+
+const events = [
+  { time: '08:38 AM', title: 'Signing of the Marriage Register', icon: Pen },
+  { time: '09:30 AM', title: 'Arrival of guests', icon: Heart },
+  { time: '10:02 AM', title: 'Poruwa Ceremony', icon: Camera },
+  { time: '10:25 AM', title: 'Stepping down from the Poruwa', icon: PartyPopper },
+  { time: '12:30 PM', title: 'Lunch', icon: Utensils },
+  { time: '03:15 PM', title: 'Cake Cutting', icon: Utensils },
+  { time: '03:38 PM', title: 'Departure of the Couple', icon: Car },
+];
+
+export const Timeline: React.FC = () => {
+  return (
+    <section aria-label="Wedding Timeline" id="timeline" className="relative min-h-[100dvh] w-full flex items-center justify-center py-12 px-4 sm:px-6 bg-transparent">
+      
+      {/* Soft gradient overlay to gently soften the background behind the timeline without a hard box */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-transparent pointer-events-none" />
+
+      <div className="w-full max-w-3xl relative z-10 bg-white/50 backdrop-blur-md rounded-[3rem] border border-[#4CAF50]/20 shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-6 sm:p-12 my-10">
+        <div className="text-center mb-10">
+          <h2 className="text-5xl sm:text-6xl font-display text-[#111111] tracking-tight drop-shadow-sm" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.9)" }}>Timeline</h2>
+          <div className="flex items-center justify-center mt-4 opacity-70" aria-hidden="true">
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#4CAF50]" />
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" className="mx-4">
+              <polygon points="4.5,0 9,4.5 4.5,9 0,4.5" fill="#4CAF50" fillOpacity="0.85" />
+            </svg>
+            <div className="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#4CAF50]" />
+          </div>
+        </div>
+
+        <div className="relative">
+          {/* Vertical Line */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-[#4CAF50]/60 to-transparent" />
+
+          <div className="space-y-8 sm:space-y-10">
+            {events.map((event, index) => (
+              <motion.div
+                key={event.title}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className={`flex flex-col md:flex-row items-center gap-2 sm:gap-6 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                }`}
+              >
+                {/* Time (Now Title) */}
+                <div className={`flex-1 w-full text-center ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'} pt-1 md:pt-0`}>
+                  <h4 className="text-xl sm:text-2xl font-serif text-[#1B5E20] font-semibold leading-tight" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.title}</h4>
+                </div>
+
+                {/* Icon Node */}
+                <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white backdrop-blur-md border border-[#4CAF50]/50 flex items-center justify-center shadow-lg transform transition-transform hover:scale-110">
+                  <event.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#4CAF50]" />
+                </div>
+
+                {/* Content (Now Time) */}
+                <div className={`flex-1 w-full text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'} pb-2 md:pb-0`}>
+                  <span className="text-3xl sm:text-4xl font-serif text-[#111111] font-medium" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>{event.time}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
